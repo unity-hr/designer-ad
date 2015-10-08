@@ -23,6 +23,22 @@
     width: calc(100vw - 680px);
   }
 
+  &-mobile {
+    display: block;
+
+    @include mq(md) {
+      display: none;
+    }
+  }
+
+  &-desktop {
+    display: none;
+
+    @include mq(md) {
+      display: block;
+    }
+  }
+
   img {
     display: block;
     max-width: 100%;

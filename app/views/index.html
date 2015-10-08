@@ -5,16 +5,23 @@ description: Unity is expanding and we need your help to keep delivering the mos
 
 <div class="content">
   <div class="content-image">
-    <% site.data.images.forEach(function (image) { %>
-      <div class="img">
-        <img
-          src="images/<%= image.url %>@2x.png"
-          data-start="transform: translate3d(0, <%= image.start %>px, 0)"
-          data-end="transform: translate3d(0, 0, 0)"
-          alt=""
-        />
-      </div>
-    <% }) %>
+    <div class="content-image-mobile">
+      <% site.data.images.forEach(function (image) { %>
+        <div class="img"><img src="images/<%= image.url %>@2x.png" alt="" /></div>
+      <% }) %>
+    </div>
+    <div class="content-image-desktop">
+      <% site.data.images.forEach(function (image) { %>
+        <div class="img">
+          <img
+            src="images/<%= image.url %>@2x.png"
+            data-start="transform: translate3d(0, <%= image.start %>px, 0)"
+            data-end="transform: translate3d(0, 0, 0)"
+            alt=""
+          />
+        </div>
+      <% }) %>
+    </div>
   </div>
 
   <div class="content-text">
