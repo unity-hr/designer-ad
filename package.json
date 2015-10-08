@@ -60,5 +60,6 @@
     "yamljs": "^0.2.4"
   },
   "dependencies": {
+    "skrollr": "^0.6.26"
   }
 }

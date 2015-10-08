@@ -1,4 +1,7 @@
 &-image {
+  $width: 1705px;
+  $height: 1300px;
+
   position: fixed;
   top: 0;
   bottom: 0;
@@ -6,11 +9,18 @@
   width: calc(100vw - 680px);
   background: #008df0;
 
-  img {
+  .img {
     display: block;
     position: absolute;
-    top: 0;
-    left: 0;
-    transform: scale(0.5);
+    top: 50%;
+    left: 50%;
+    width: $width/2;
+    height: $height/2;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
   }
 }
