@@ -88,6 +88,7 @@ li {
     color: #727272;
 
     @include mq(sm) {
+      display: block;
       flex-shrink: 0;
       width: 6.5em;
       margin-right: 1em;
