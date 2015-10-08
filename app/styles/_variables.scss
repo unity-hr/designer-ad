@@ -1,6 +1,14 @@
+// type
+$fonts: (
+  fallback: ('helvetica neue', helvetica, arial, sans-serif),
+  light: 'TyponineSans Light 68',
+  regular: 'TyponineSans Regular 92',
+  bold: 'TyponineSans Bold 52'
+);
+
 // your colors
 $colors: (
-  primary: #d4573a
+  primary: #1a5fde
 );
 
 // brand colors

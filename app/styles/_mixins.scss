@@ -1,3 +1,15 @@
+@mixin font($weight) {
+  font-family: font($weight), font(fallback);
+
+  @if $weight == light {
+    font-weight: 300;
+  } @else if $weight == regular {
+    font-weight: 400;
+  } @else if $weight == bold {
+    font-weight: 700;
+  }
+}
+
 @mixin font-smoothing($type: antialiased) {
   -webkit-font-smoothing: $type;
 
