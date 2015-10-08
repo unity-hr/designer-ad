@@ -1,66 +1,7 @@
 .content {
   display: flex;
+  justify-content: flex-end;
 
-  p {
-    margin-bottom: 1.5em;
-  }
-
-  li {
-    margin-bottom: 1.5em;
-  }
-
-  &-text {
-    width: 680px;
-    padding: 70px 120px 160px 80px;
-  }
-
-  &-logo {
-    @include font(bold);
-    display: inline-block;
-    margin-bottom: 60px;
-    font-size: 24px;
-
-    &:hover,
-    &:focus {
-      text-decoration: none;
-    }
-  }
-
-  &-requirements {
-    @include font(regular);
-    display: flex;
-    margin-bottom: 40px;
-  }
-
-  &-requirement {
-    margin-right: 92px;
-
-    &-label {
-      font-size: 14px;
-      font-variant: small-caps;
-      text-transform: lowercase;
-      letter-spacing: 1px;
-      color: #727272;
-    }
-
-    &-value {
-      font-size: 20px;
-      color: #000;
-    }
-  }
-
-  &-info {
-    &-item {
-      display: flex;
-    }
-
-    &-label {
-      @include font(regular);
-      flex-shrink: 0;
-      width: 6.5em;
-      margin-right: 1em;
-      font-size: inherit;
-      color: #727272;
-    }
-  }
+  @import 'content/image';
+  @import 'content/text';
 }

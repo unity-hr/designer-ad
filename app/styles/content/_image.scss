@@ -1,0 +1,16 @@
+&-image {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: calc(100vw - 680px);
+  background: #008df0;
+
+  img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0.5);
+  }
+}
