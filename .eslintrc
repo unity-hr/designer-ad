@@ -1,0 +1,26 @@
+{
+  "extends": "eslint:recommended",
+
+  "globals": {
+    "browser": false
+  },
+
+  "env": {
+    "node": true,
+    "browser": true,
+    "mocha": true,
+    "es6": true
+  },
+
+  "ecmaFeatures": {
+    "modules": true,
+    "experimentalObjectRestSpread": true
+  },
+
+  "rules": {
+    "no-console": 1,
+    "no-unused-vars": [2, {"vars": "all", "args": "none"}],
+    "quotes": [2, "single", "avoid-escape"],
+    "arrow-parens": 2
+  }
+}
