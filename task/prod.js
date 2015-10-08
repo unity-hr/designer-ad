@@ -7,6 +7,9 @@ const $ = loadPlugins();
 const bs = browserSync.create();
 
 gulp.task('html', ['scripts', 'views', 'styles'], () => {
+  gulp.src('app/scripts/vendor/**/*.js')
+    .pipe(gulp.dest('dist/scripts/vendor'));
+
   return gulp.src([
     '.tmp/**/*.html',
     '.tmp/scripts/*.js',
