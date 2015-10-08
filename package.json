@@ -60,9 +60,5 @@
     "yamljs": "^0.2.4"
   },
   "dependencies": {
-    "es6-promise": "^2.3.0",
-    "fontfaceobserver": "^1.5.0",
-    "svg4everybody": "jonathantneal/svg4everybody",
-    "whatwg-fetch": "^0.9.0"
   }
 }
