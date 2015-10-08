@@ -1,4 +1,12 @@
-// type
+$breakpoints: (
+  xs: 320px,
+  ms: 480px,
+  sm: 768px,
+  md: 1024px,
+  lg: 1200px,
+  xl: 1400px
+);
+
 $fonts: (
   fallback: ('helvetica neue', helvetica, arial, sans-serif),
   light: 'TyponineSans Light 68',
@@ -6,7 +14,6 @@ $fonts: (
   bold: 'TyponineSans Bold 52'
 );
 
-// your colors
 $colors: (
   primary: #1a5fde
 );

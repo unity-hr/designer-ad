@@ -1,6 +1,10 @@
 .content {
-  display: flex;
-  justify-content: flex-end;
+  overflow-x: hidden; // prevent mobile image from overflowing
+
+  @include mq(sm) {
+    display: flex;
+    justify-content: flex-end;
+  }
 
   @import 'content/image';
   @import 'content/text';

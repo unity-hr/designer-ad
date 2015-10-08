@@ -1,3 +1,15 @@
+@mixin mq($breakpoint, $type: min) {
+  $width: map-get($breakpoints, $breakpoint);
+
+  @if not $width {
+    $width: $breakpoint;
+  }
+
+  @media (#{$type}-width: if($type == min, $width, $width - 1px)) {
+    @content;
+  }
+};
+
 @mixin font($weight) {
   font-family: font($weight), font(fallback);
 

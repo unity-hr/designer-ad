@@ -7,15 +7,33 @@ li {
 }
 
 &-text {
-  width: 680px;
-  padding: 70px 120px 160px 80px;
+  padding: 50px 20px 20px 20px;
+
+  @include mq(sm) {
+    width: 440px;
+    padding: 60px 20px 60px 60px;
+  }
+
+  @include mq(md) {
+    width: 580px;
+    padding: 70px 80px 70px 80px;
+  }
+
+  @include mq(lg) {
+    width: 680px;
+    padding: 70px 120px 70px 80px;
+  }
 }
 
 &-logo {
   @include font(bold);
   display: inline-block;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   font-size: 24px;
+
+  @include mq(sm) {
+    margin-bottom: 60px;
+  }
 
   &:hover,
   &:focus {
@@ -26,11 +44,19 @@ li {
 &-requirements {
   @include font(regular);
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+
+  @include mq(sm) {
+    margin-bottom: 40px;
+  }
 }
 
 &-requirement {
-  margin-right: 92px;
+  margin-right: 24px;
+
+  @include mq(sm) {
+    margin-right: 92px;
+  }
 
   &-label {
     font-size: 14px;
@@ -48,15 +74,28 @@ li {
 
 &-info {
   &-item {
-    display: flex;
+    @include mq(sm) {
+      display: flex;
+    }
   }
 
   &-label {
     @include font(regular);
-    flex-shrink: 0;
-    width: 6.5em;
-    margin-right: 1em;
-    font-size: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
     color: #727272;
+
+    @include mq(sm) {
+      flex-shrink: 0;
+      width: 6.5em;
+      margin-right: 1em;
+      font-size: inherit;
+
+      img {
+        display: none;
+      }
+    }
   }
 }

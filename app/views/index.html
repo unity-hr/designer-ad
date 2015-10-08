@@ -5,19 +5,16 @@ description: Unity is expanding and we need your help to keep delivering the mos
 
 <div class="content">
   <div class="content-image">
-    <div class="img"><img data-start="transform: translateY(382px)"  data-end="transform: translateY(0)" src="images/desk@2x.png" alt="" /></div>
-    <div class="img"><img data-start="transform: translateY(-300px)" data-end="transform: translateY(0)" src="images/cactus@2x.png" alt="" /></div>
-    <div class="img"><img data-start="transform: translateY(160px)"  data-end="transform: translateY(0)" src="images/display@2x.png" alt="" /></div>
-    <div class="img"><img data-start="transform: translateY(-200px)" data-end="transform: translateY(0)" src="images/ps@2x.png" alt="" /></div>
-    <div class="img"><img data-start="transform: translateY(-26px)"  data-end="transform: translateY(0)" src="images/floppy@2x.png" alt="" /></div>
-    <div class="img"><img data-start="transform: translateY(250px)"  data-end="transform: translateY(0)" src="images/photos@2x.png" alt="" /></div>
-    <div class="img"><img data-start="transform: translateY(-26px)"  data-end="transform: translateY(0)" src="images/camera@2x.png" alt="" /></div>
-    <div class="img"><img data-start="transform: translateY(14px)"   data-end="transform: translateY(0)" src="images/ai@2x.png" alt="" /></div>
-    <div class="img"><img data-start="transform: translateY(-150px)" data-end="transform: translateY(0)" src="images/sketch@2x.png" alt="" /></div>
-    <div class="img"><img data-start="transform: translateY(84px)"   data-end="transform: translateY(0)" src="images/mouse@2x.png" alt="" /></div>
-    <div class="img"><img data-start="transform: translateY(-400px)" data-end="transform: translateY(0)" src="images/keyboard@2x.png" alt="" /></div>
-    <div class="img"><img data-start="transform: translateY(286px)"  data-end="transform: translateY(0)" src="images/coffee@2x.png" alt="" /></div>
-    <div class="img"><img data-start="transform: translateY(74px)"   data-end="transform: translateY(0)" src="images/gameboy@2x.png" alt="" /></div>
+    <% site.data.images.forEach(function (image) { %>
+      <div class="img">
+        <img
+          src="images/<%= image.url %>@2x.png"
+          data-start="transform: translate3d(0, <%= image.start %>px, 0)"
+          data-end="transform: translate3d(0, 0, 0)"
+          alt=""
+        />
+      </div>
+    <% }) %>
   </div>
 
   <div class="content-text">
@@ -37,13 +34,13 @@ description: Unity is expanding and we need your help to keep delivering the mos
     <p>We’re a team of 15+ designers and developers dedicated on building cool digital products and interfaces. We also love what we do and enjoy the awesome process of creating stuff and bringing it to a pixelated life.</p>
     <div class="content-info">
       <div class="content-info-item">
-        <h2 class="content-info-label">A Little About This Role</h2>
+        <h2 class="content-info-label">A Little About This Role <img src="images/mobile/gameboy@2x.png" width="62" height="43" alt="" /></h2>
         <div class="content-info-value">
           <p>We are looking for an individual with exceptional aesthetic sense that sees and breathes pixels. You will be creating products and interfaces for large and small companies, from small startups to large corporations. You will also be responsible for creating company presentations and concept design for various in-house projects.</p>
         </div>
       </div>
       <div class="content-info-item">
-        <h2 class="content-info-label">You will have to</h2>
+        <h2 class="content-info-label">You will have to <img src="images/mobile/coffee@2x.png" width="39" height="51" alt="" /></h2>
         <div class="content-info-value">
           <ul>
             <li>Create wireframes and user flows for web/mobile projects</li>
@@ -55,7 +52,7 @@ description: Unity is expanding and we need your help to keep delivering the mos
         </div>
       </div>
       <div class="content-info-item">
-        <h2 class="content-info-label">Would be great if you</h2>
+        <h2 class="content-info-label">Would be great if you <img src="images/mobile/floppy@2x.png" width="69" height="41" alt="" /></h2>
         <div class="content-info-value">
           <ul>
             <li>Mastered typography and layout, yoda style</li>

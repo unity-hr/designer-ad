@@ -2,25 +2,49 @@
   $width: 1705px;
   $height: 1300px;
 
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: calc(100vw - 680px);
+  position: relative;
+  height: 346px;
   background: #008df0;
 
-  .img {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: $width/2;
-    height: $height/2;
-    transform: translateX(-50%) translateY(-50%);
+  @include mq(sm) {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: calc(100vw - 440px);
+    height: auto;
+  }
+
+  @include mq(md) {
+    width: calc(100vw - 580px);
+  }
+
+  @include mq(lg) {
+    width: calc(100vw - 680px);
   }
 
   img {
     display: block;
     max-width: 100%;
+  }
+
+  .img {
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    max-width: $width/2;
+    width: $width/5;
+    transform: translate3d(-50%, 0, 0);
+
+    @include mq(ms) {
+      width: $width/4;
+    }
+
+    @include mq(sm) {
+      top: 50%;
+      bottom: auto;
+      width: 115%;
+      transform: translate3d(-50%, -50%, 0);
+    }
   }
 }

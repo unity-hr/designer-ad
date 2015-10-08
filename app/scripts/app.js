@@ -1,3 +1,5 @@
 import skrollr from 'skrollr';
 
-skrollr.init();
+if (matchMedia('(min-width: 1024px)').matches && !window.Modernizr.touchevents) {
+  skrollr.init();
+}
