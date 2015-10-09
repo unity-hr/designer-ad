@@ -3,7 +3,7 @@
   $height: 1300px;
 
   position: relative;
-  height: 346px;
+  height: 400px;
   background: #008df0;
 
   @include mq(sm) {
@@ -49,11 +49,11 @@
     bottom: -5%;
     left: 50%;
     max-width: $width/2;
-    width: $width/5;
+    width: $width/4.2;
     transform: translate3d(-50%, 0, 0);
 
-    @include mq(ms) {
-      width: $width/4;
+    @include mq(375px) {
+      width: $width/3.5;
     }
 
     @include mq(sm) {
