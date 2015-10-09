@@ -104,5 +104,9 @@ li {
         margin-bottom: 0;
       }
     }
+
+    a {
+      @include font(regular);
+    }
   }
 }
