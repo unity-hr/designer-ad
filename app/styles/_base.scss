@@ -46,12 +46,10 @@ h1 {
 
 a {
   color: color(primary);
-  text-decoration: none;
 
   &:hover,
   &:focus {
     color: shade(color(primary), 15%);
-    text-decoration: underline;
   }
 }
 
