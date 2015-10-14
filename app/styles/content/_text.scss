@@ -105,8 +105,46 @@ li {
       }
     }
 
-    a {
-      @include font(regular);
+    .link {
+      @include font(bold);
+      color: #008df0;
+
+      &:hover,
+      &:focus {
+        color: color(primary);
+      }
+
+      &-social {
+        display: inline-block;
+        margin-right: 2em;
+        text-decoration: none;
+        color: inherit;
+
+        @include mq(md) {
+          position: relative;
+          bottom: 0.2em;
+        }
+
+        + .link-social {
+          @include mq(sm) {
+            margin-top: 0.5em;
+          }
+
+          @include mq(md) {
+            position: relative;
+            margin-top: 0;
+          }
+        }
+
+        span {
+          vertical-align: middle;
+        }
+
+        &:hover,
+        &:focus {
+          color: #000;
+        }
+      }
     }
   }
 }
