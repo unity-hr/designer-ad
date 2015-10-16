@@ -147,5 +147,21 @@ li {
         }
       }
     }
+
+    .social {
+      display: flex;
+      align-items: center;
+
+      &-button {
+        + .social-button {
+          margin-left: 1em;
+        }
+
+        &.facebook {
+          position: relative;
+          bottom: 1px;
+        }
+      }
+    }
   }
 }
